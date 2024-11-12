@@ -19,9 +19,9 @@ export default function Navbar() {
   }, []);
 
   const scrollToBooking = () => {
-    const bookingSection = document.getElementById('booking-section');
+    const bookingSection = document.getElementById("booking-section");
     if (bookingSection) {
-      bookingSection.scrollIntoView({ behavior: 'smooth' });
+      bookingSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -37,31 +37,37 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <BookOpen className="h-6 w-6 text-primary" />
-            <span className={cn(
-              "font-bold text-lg",
-              isScrolled ? "text-primary" : "text-white"
-            )}>
-              English Tutor
+            <BookOpen
+              className={`h-6 w-6  ${isScrolled ? "text-black" : "text-white"}`}
+            />
+            <span
+              className={cn(
+                "font-bold text-lg",
+                isScrolled ? "text-primary" : "text-white"
+              )}
+            >
+              Gani Academy
             </span>
           </Link>
-          
+
           <div className="flex items-center space-x-4">
             <Link href="/">
-              <Button variant="ghost" className={cn(
-                isScrolled ? "text-primary" : "text-white"
-              )}>
+              <Button
+                variant="ghost"
+                className={cn(isScrolled ? "text-primary" : "text-white")}
+              >
                 Home
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="ghost" className={cn(
-                isScrolled ? "text-primary" : "text-white"
-              )}>
+              <Button
+                variant="ghost"
+                className={cn(isScrolled ? "text-primary" : "text-white")}
+              >
                 Contact
               </Button>
             </Link>
-            <Button 
+            <Button
               className="bg-primary text-primary-foreground"
               onClick={scrollToBooking}
             >

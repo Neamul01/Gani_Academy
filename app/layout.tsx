@@ -1,14 +1,15 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'English Tutor - Expert Tutoring for 11th & 12th Grade',
-  description: 'Professional English tutoring services for 11th and 12th-grade students. Book your personalized sessions today.',
+  title: "Gani Academy - Expert Tutoring for 11th & 12th Grade",
+  description:
+    "Professional English tutoring services for 11th and 12th-grade students. Book your personalized sessions today.",
 };
 
 export default function RootLayout({
